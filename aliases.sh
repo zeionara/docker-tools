@@ -27,3 +27,7 @@ alias drdui="$DOCKER_TOOLS_ROOT/delete/untagged-images.sh"
 
 alias drs='sudo docker stop'
 alias drss="$DOCKER_TOOLS_ROOT/stop/using-image-repo-tag-substring.sh"
+
+# inspect
+
+alias driis="$DOCKER_TOOLS_ROOT/inspect/ip-address-using-image-repo-tag-substring.sh"
