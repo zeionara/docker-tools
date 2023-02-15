@@ -1,5 +1,9 @@
 # Docker tools
 
+<p align="center">
+    <img src="assets/images/logo.png"/>
+</p>
+
 Useful aliases and scripts for docker which simplify routine operations.
 
 ## Installation
