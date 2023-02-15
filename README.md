@@ -22,13 +22,30 @@ Then to apply changes in your current terminal, re-import `.bashrc` contents:
 
 ## Usage
 
+### Structure
+
+The first two letters in every alias are always `dr` which is short for `docker`. The next one or two letters correspond to the action to perform. The mapping is following:
+
+| Letter | Action name | Action name in the standard `docker` tool |
+| --- | --- | --- |
+| b | build | build |
+| d | delete | remove |
+| r | run | run |
+| s | stop | stop |
+| u | up | start |
+| v | view | inspect |
+
+The remaining letters correspond to the action parameters (see [aliases.sh](aliases.sh) for more details).
+
+### Examples
+
 There are several aliases confugured in the `aliases.sh`, one of which allows to get ip address of a container by checking its image repo tags, so it's very easy to apply this command for sending an http request to container:
 
 ```sh
-curl $(driis ku):8081
+curl $(drvis ku):8081
 ```
 
-Here `driis` stands for **d**ocke**r** **i**nspect **i**p addresses of containers using image repo tag **s**ubstring.  
+Here `drvis` stands for **d**ocke**r** **v**iew **i**p addresses of containers using image repo tag **s**ubstring.  
 Another command allows to stop all docker containers by filtering their images:
 
 ```sh

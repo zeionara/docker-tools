@@ -6,28 +6,30 @@ DOCKER_TOOLS_ROOT="$HOME/docker-tools"
 
 alias drb='sudo docker build . --tag'
 
-# print
+# delete (remove)
 
-alias drp='sudo docker ps'
-alias drpa='sudo docker ps -a'
-
-alias dri='sudo docker images'
-alias dria='sudo docker images -a'
+alias drdac="$DOCKER_TOOLS_ROOT/delete/all-containers.sh"
+alias drdui="$DOCKER_TOOLS_ROOT/delete/untagged-images.sh"
 
 # run
 
 alias drr='sudo docker run'
-
-# remove (delete)
-
-alias drdac="$DOCKER_TOOLS_ROOT/delete/all-containers.sh"
-alias drdui="$DOCKER_TOOLS_ROOT/delete/untagged-images.sh"
 
 # stop
 
 alias drs='sudo docker stop'
 alias drss="$DOCKER_TOOLS_ROOT/stop/using-image-repo-tag-substring.sh"
 
-# inspect
+# view (inspect)
 
-alias driis="$DOCKER_TOOLS_ROOT/inspect/ip-address-using-image-repo-tag-substring.sh"
+alias drv='sudo docker ps'
+alias drva='sudo docker ps -a'
+
+alias drvi='sudo docker images'
+alias drvia='sudo docker images -a'
+
+alias drvis="$DOCKER_TOOLS_ROOT/inspect/ip-address-using-image-repo-tag-substring.sh"
+
+# up (start)
+
+alias dru='sudo docker start'
