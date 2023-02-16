@@ -11,6 +11,14 @@ alias drb='sudo docker build . --tag'
 alias drdac="$DOCKER_TOOLS_ROOT/delete/all-containers.sh"
 alias drdui="$DOCKER_TOOLS_ROOT/delete/untagged-images.sh"
 
+# exec
+
+alias dre='sudo docker exec'
+
+dreb () {
+    sudo docker exec -it $1 /bin/bash
+}
+
 # run
 
 alias drr='sudo docker run'
