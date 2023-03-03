@@ -2,6 +2,8 @@
 
 DOCKER_TOOLS_ROOT="$HOME/docker-tools"
 
+. $DOCKER_TOOLS_ROOT/docker-compose.sh
+
 # build
 
 alias drb='sudo docker build . --tag'
