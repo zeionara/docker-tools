@@ -43,3 +43,7 @@ alias drvis="$DOCKER_TOOLS_ROOT/inspect/ip-address-using-image-repo-tag-substrin
 # up (start)
 
 alias dru='sudo docker start'
+
+# docker compose
+
+alias up='sudo docker-compose up'
