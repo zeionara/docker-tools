@@ -4,11 +4,16 @@ DOCKER_TOOLS_ROOT="$HOME/docker-tools"
 
 . $DOCKER_TOOLS_ROOT/docker-compose.sh
 
+alias dr='sudo docker'
+
 # build
 
 alias drb='sudo docker build . --tag'
 
 # delete (remove)
+
+alias drd="sudo docker remove"
+alias drdi="sudo docker rmi"
 
 alias drdac="$DOCKER_TOOLS_ROOT/delete/all-containers.sh"
 alias drdui="$DOCKER_TOOLS_ROOT/delete/untagged-images.sh"
