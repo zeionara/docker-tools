@@ -26,6 +26,10 @@ dreb () {
     sudo docker exec -it $1 /bin/bash
 }
 
+# ports
+
+alias drp='sudo docker port'
+
 # run
 
 alias drr='sudo docker run'
@@ -51,4 +55,4 @@ alias dru='sudo docker start'
 
 # docker compose
 
-alias up='sudo docker-compose up'
+# alias up='sudo docker-compose up'
